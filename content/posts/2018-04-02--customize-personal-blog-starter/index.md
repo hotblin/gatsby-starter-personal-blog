@@ -1,5 +1,5 @@
 ---
-title: How to customize the PersonalBlog starter's appearance
+title: 地方圣诞节快乐放假风口浪尖
 subTitle: GatsbyJS starter instruction
 cover: photo-1463852247062-1bbca38f7805-cover.jpg
 ---
