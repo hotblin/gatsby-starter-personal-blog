@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import injectSheet from "react-jss";
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
 
-import Footnote from "./Footnote";
+import Footnote from './Footnote'
 
 const styles = theme => ({
   footer: {
     color: theme.main.colors.footer,
     padding: `1.5rem 1.5rem  calc(${theme.bars.sizes.actionsBar}px + 1.5rem) 1.5rem`,
-    "& p": {
+    '& p': {
       margin: 0
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
@@ -18,22 +18,22 @@ const styles = theme => ({
       padding: `2rem 3rem 2rem 3rem`
     }
   }
-});
+})
 
 const Footer = props => {
-  const { classes, footnote } = props;
-  const { html } = footnote;
+  const { classes, footnote } = props
+  const { html } = footnote
 
   return (
     <footer className={classes.footer}>
       <Footnote content={html} />
     </footer>
-  );
-};
+  )
+}
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired,
   footnote: PropTypes.object.isRequired
-};
+}
 
-export default injectSheet(styles)(Footer);
+export default injectSheet(styles)(Footer)
